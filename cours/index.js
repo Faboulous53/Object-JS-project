@@ -123,6 +123,18 @@ Utilisateur.prototype.sayCity = function() {
     console.log("J'habite à " + this.ville);
 }
 
-console.log(user5.sayCity());
+// console.log(user5.sayCity());
+
+Object.assign(Utilisateur.prototype, {
+    method1() {
+        //Ma méthode
+    },
+    method2() {
+        //Ma méthode
+    }
+})
+
+console.log(user5);
+
 
 
